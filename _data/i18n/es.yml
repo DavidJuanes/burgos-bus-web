@@ -1,0 +1,106 @@
+locale: es_ES
+tagline: Tiempos de llegada del autobús urbano
+home: /
+skip: Saltar al contenido
+
+nav:
+  label: Principal
+  features: Funciones
+  screenshots: Capturas
+  privacy: Privacidad
+  switch_short: EN
+  switch_name: English
+
+play:
+  alt: Disponible en Google Play
+  badge: /assets/img/google-play-badge-es.png
+  soon: Próximamente en Google Play
+
+hero:
+  eyebrow: Autobuses urbanos de Burgos
+  title: ¿Cuánto le falta a tu bus?
+  lead: Tiempos de llegada en tiempo real de tus paradas favoritas y de las que tienes más cerca.
+  note: Gratis · Sin registro · Android 8 o superior
+  board_label: Panel de parada de ejemplo con las próximas llegadas a Puente de Santa María
+  board_stop: PARADA 182 · PTE. STA. MARÍA
+
+stats:
+  label: Datos
+  lines: líneas, regulares, especiales y Búho
+  stops: paradas, con su foto a pie de calle
+  since: una app nueva para Burgos
+  free: sin cuentas ni registros
+
+story:
+  kicker: Funciones
+  title: Todo lo que necesitas en la parada
+  intro: Seis paradas por la app. Baja la página y el móvil te enseña cada pantalla.
+  nearby:
+    title: Cerca de ti
+    text: Tus paradas favoritas y las más cercanas, con las próximas llegadas de cada línea.
+    in: "en %m min"
+    now: Llegando
+    first_away: En tiempo real
+    first_then: luego en 18 min
+    second_away: En tiempo real
+    second_then: luego en 26 min
+    chips: [Se actualiza solo, Favoritas con nombre propio, Búsqueda por número o nombre]
+    alt: Pantalla Cerca con las favoritas y las paradas cercanas
+  stop:
+    title: Reconoce tu parada
+    text: Cada parada tiene su foto de Street View, una brújula que te indica hacia dónde está y las llegadas de todas sus líneas.
+    detail: Parada 183 · a 730 m
+    chips: ["✎ Renómbrala: «Trabajo»", ★ Favorita, Compartir]
+    alt: Detalle de la parada Avda. Arlanzón 19 con su foto
+  lines:
+    title: Todas las líneas
+    text: Las regulares, las especiales y los Búho nocturnos, con su recorrido de ida y vuelta, su horario y si están en servicio ahora mismo. Con las horas de salida de las que tienen pocos viajes y las paradas que solo se hacen a ciertas horas.
+    active: ● Activa
+    chips: [Cada 8 min, Ida y vuelta, "Búho nocturno: 87 y 88"]
+    alt: Recorrido de la línea 1, Avda. Arlanzón - Gamonal
+  map:
+    title: Toda la red en el mapa
+    text: Todas las paradas y el recorrido de las líneas por las calles. Combina las líneas que quieras y toca una parada para ver sus llegadas o cómo llegar a pie.
+    legend: Las 28 líneas
+    chips: [458 paradas, Cómo llegar a pie, Modo oscuro]
+    alt: Mapa de Burgos en la app, con las paradas y los recorridos de cuatro líneas
+  fares:
+    title: Tarifas a mano
+    text: Billetes y abonos con su precio, según la ordenanza fiscal municipal, para saber qué te conviene antes de subir.
+    tickets:
+      - { name: Billete ordinario, price: "1,20 €" }
+      - { name: Bonobur, price: "0,24 €", unit: por viaje }
+      - { name: Bono joven, price: "0,13 €", unit: por viaje }
+    chips: [Tarifa reducida, Búho nocturno, Transbordo gratis en 45 min]
+    alt: Pantalla de tarifas
+  yours:
+    title: A tu manera
+    text: Elige cómo ver los tiempos, el tema y el idioma. Funciona con TalkBack y con letra grande.
+    toggle: "Formato de llegada: en minutos o en hora"
+    relative: en 2 min
+    clock: "10:02"
+    chips: [◐ Claro y oscuro, ES · EN, Aa Letra grande, TalkBack]
+    alt: Pantalla Cerca en modo oscuro, con los tiempos en minutos
+
+gallery:
+  kicker: Capturas
+  title: Así se ve en tu móvil
+  zoom: Ampliar
+  viewer: Captura ampliada
+  close: Cerrar
+  prev: Anterior
+  next: Siguiente
+  # The Play listing's graphics, when Burgos has them (assets/img/play/es/<n>.webp). Empty: no gallery.
+  shots: []
+
+closing:
+  title: Sal de casa a tu hora
+
+footer:
+  label: Pie de página
+  privacy: Política de privacidad
+  disclaimer: Burgos Bus es una app independiente y no está vinculada al Ayuntamiento de Burgos.
+  trademark: Google Play y el logotipo de Google Play son marcas de Google LLC.
+
+updated: "Última actualización:"
+months: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]

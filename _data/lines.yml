@@ -1,0 +1,30 @@
+# Line badges with their colours, from bus-data-library's lines.json (bus-data-burgos), unsoftened as in the app. "dark" lines need dark text,
+# as the app picks by contrast.
+- { id: "1", color: "#F90606", dark: true }
+- { id: "2", color: "#F4B335", dark: true }
+- { id: "3", color: "#92F247", dark: true }
+- { id: "4", color: "#918484", dark: true }
+- { id: "5", color: "#E0A9ED", dark: true }
+- { id: "6", color: "#87687D", dark: false }
+- { id: "7", color: "#AD51BC", dark: true }
+- { id: "8", color: "#689F5A", dark: true }
+- { id: "9", color: "#80C7EF", dark: true }
+- { id: "10", color: "#6867B3", dark: false }
+- { id: "11", color: "#E94663", dark: true }
+- { id: "12", color: "#70A793", dark: true }
+- { id: "13", color: "#48B3EF", dark: true }
+- { id: "14", color: "#4DAF9E", dark: true }
+- { id: "15", color: "#3B6ED4", dark: false }
+- { id: "16", color: "#964D18", dark: false }
+- { id: "18", color: "#EF3DDD", dark: true }
+- { id: "19", color: "#8AC9E4", dark: true }
+- { id: "20", color: "#6AE26F", dark: true }
+- { id: "21", color: "#0D704C", dark: false }
+- { id: "22", color: "#EF942A", dark: true }
+- { id: "23", color: "#51736B", dark: false }
+- { id: "73", color: "#87BAE9", dark: true }
+- { id: "87", color: "#50710A", dark: false }
+- { id: "88", color: "#FF0000", dark: true }
+- { id: "89", color: "#C909C1", dark: false }
+- { id: "101", color: "#EA8309", dark: true }
+- { id: "102", color: "#CF5612", dark: true }
