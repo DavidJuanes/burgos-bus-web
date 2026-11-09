@@ -5,7 +5,7 @@ ref: privacy
 permalink: /privacidad/
 title: Política de privacidad
 description: Qué datos trata la app Burgos Bus, para qué y cómo ejercer tus derechos.
-updated: 2026-11-08
+updated: 2026-11-09
 locale: es_ES
 ---
 
@@ -14,7 +14,7 @@ Esta política explica qué datos trata la app **Burgos Bus** para Android (`dev
 ## Resumen
 
 - No hay cuentas ni registros: la app no sabe quién eres.
-- Tu ubicación, tus favoritas y tus ajustes se quedan en tu móvil.
+- Tu ubicación, tus rutas, tus favoritas y tus ajustes se quedan en tu móvil. Las rutas se calculan en el móvil.
 - La app envía informes de fallos a Google (Firebase Crashlytics) y muestra anuncios de Google AdMob, que usan identificadores del dispositivo. En el Espacio Económico Europeo, Reino Unido y Suiza te pedimos el consentimiento antes de personalizar los anuncios.
 - No vendemos datos personales.
 
@@ -26,15 +26,30 @@ David González Juanes, desarrollador de la app, con residencia en España. Cont
 
 ### Ubicación
 
-Si das permiso de ubicación (aproximada o precisa), la app la usa para ordenar las paradas por cercanía, centrar los mapas y orientar la brújula hacia la parada. **La ubicación se procesa solo en tu móvil**: la app no la envía a ningún servidor ni la guarda. El permiso es opcional: sin él, la app usa la Plaza Mayor de Burgos como punto de partida. Puedes retirarlo cuando quieras en los ajustes de Android.
+Si das permiso de ubicación (aproximada o precisa), la app la usa para ordenar las paradas por cercanía, centrar los mapas, orientar la brújula hacia la parada y, si pides una ruta o una guía de viaje, calcular el trayecto desde donde estás. **La ubicación se procesa solo en tu móvil**: la app no la envía a ningún servidor ni la guarda. El permiso es opcional, salvo para la guía de viaje (ver más abajo): sin él, la app usa la Plaza Mayor de Burgos como punto de partida y la ruta se calcula desde otro origen que elijas. Puedes retirarlo cuando quieras en los ajustes de Android.
 
 ### Favoritas y ajustes
 
-Las paradas favoritas, sus nombres, su orden y tus preferencias (formato de los tiempos, tema e idioma) se guardan en el móvil. Si tienes activada la copia de seguridad de Android, el sistema puede incluirlos en tu copia de Google, cifrada y bajo tu cuenta; no tenemos acceso a ella.
+Las paradas favoritas, sus nombres, su orden y tus preferencias (formato de los tiempos, tema, idioma y voz de la guía) se guardan en el móvil. Si tienes activada la copia de seguridad de Android, el sistema puede incluirlos en tu copia de Google, cifrada y bajo tu cuenta; no tenemos acceso a ella.
+
+### Rutas: Casa, Trabajo y destinos recientes
+
+La pestaña *Ruta* calcula en tu móvil qué autobús coger. Los lugares que guardas (*Casa* y *Trabajo*) y tus destinos recientes se guardan solo en el móvil y **se excluyen de la copia de seguridad de Android**: no salen del dispositivo. Puedes borrarlos desde la propia app, y desaparecen al desinstalarla o borrar sus datos. El origen y el destino que eliges no se envían a ningún servidor nuestro ni se usan para analítica.
 
 ### Tiempos de llegada
 
-Para mostrar las próximas llegadas, la app pide al portal de movilidad del Ayuntamiento de Burgos (su servicio «Rutas en directo») los tiempos de la parada que estás viendo. La petición va cifrada y solo lleva el número de la parada. Como en cualquier conexión a internet, ese servidor recibe la dirección IP desde la que se hace.
+Para mostrar las próximas llegadas, la app pide al portal de movilidad del Ayuntamiento de Burgos (su servicio «Rutas en directo») los tiempos de la parada que estás viendo. La petición va cifrada y solo lleva el número de la parada. Al calcular una ruta, la app pide los tiempos de varias paradas cercanas al origen y al destino, también solo con sus números: el servicio no recibe tu ubicación, tu origen ni tu destino. Como en cualquier conexión a internet, ese servidor recibe la dirección IP desde la que se hace.
+
+### Guía de viaje
+
+Si inicias una guía de viaje, la app te acompaña durante el trayecto y funciona con la pantalla apagada. Para ello:
+
+- usa tu **ubicación precisa** mientras dura el viaje, con un servicio en primer plano que verás siempre como una notificación persistente con el paso actual; no usa la ubicación en segundo plano cuando no hay un viaje en marcha, y esa ubicación se procesa solo en tu móvil, como el resto;
+- muestra **notificaciones**, que necesitas permitir para ver el paso con el móvil guardado;
+- usa la **vibración** para avisarte al llegar a tu parada o si pierdes el bus;
+- puede leer los avisos en voz alta con el motor de voz de Android de tu móvil (puedes silenciarla desde la pantalla del viaje).
+
+La guía solo empieza cuando tú lo pides, termina al llegar o cuando pulsas *Terminar*, y sin ubicación precisa o sin notificaciones no se puede usar. No se guarda el recorrido que haces.
 
 ### Mapas
 
