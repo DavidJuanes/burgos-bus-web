@@ -1,5 +1,5 @@
 locale: en_GB
-tagline: Real-time city bus arrivals
+tagline: Routes and real-time city bus arrivals
 home: /en/
 skip: Skip to content
 
@@ -18,8 +18,8 @@ play:
 
 hero:
   eyebrow: Burgos's city buses
-  title: When's your bus coming?
-  lead: Real-time arrivals at your favourite stops and the ones closest to you.
+  title: Tell us where you're going and we'll tell you which bus to take
+  lead: Plan your bus route across Burgos and get guided step by step, with real-time arrivals at every stop.
   note: Free · No sign-up · Android 8 or later
   board_label: Example stop panel with the next arrivals at Puente de Santa María
   board_stop: STOP 182 · PTE. STA. MARÍA
@@ -34,7 +34,20 @@ stats:
 story:
   kicker: Features
   title: Everything you need at the stop
-  intro: Six stops along the app. Scroll down and the phone shows you each screen.
+  intro: Seven stops along the app. Scroll down and the phone shows you each screen.
+  route:
+    title: Plan your route
+    text: Tell us where you're going and we'll tell you which bus to take, how long to wait and how far to walk, with real-time arrivals at every stop. Then trip guidance takes you through it step by step.
+    first_title: Direct · University Hospital
+    first_detail: ~ 6 min on foot · wait 3 min
+    first_time: 27 min
+    first_arrival: Arrival 19:09
+    second_title: Direct · University Hospital
+    second_detail: ~ 8 min on foot
+    second_time: ~ 28 min
+    second_arrival: Arrival ~ 19:10
+    chips: [Home and Work, Recent destinations, Step-by-step trip guidance]
+    alt: Route tab with the trip to the University Hospital drawn on the map and the bus options
   nearby:
     title: Near you
     text: Your favourite stops and the closest ones, with the next arrivals of every line.

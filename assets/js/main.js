@@ -54,7 +54,7 @@
   const story = document.querySelector(".story");
   document.querySelectorAll(".legend span").forEach((s, k) => s.style.setProperty("--i", k));
   function show(i) {
-    const which = i === 5 && clockFmt ? 6 : i;
+    const which = i === 6 && clockFmt ? 7 : i;
     shots.forEach((s, k) => s.classList.toggle("on", k === which));
     dots.forEach((d, k) => d.classList.toggle("on", k === i));
     steps.forEach((s, k) => { s.classList.toggle("active", k === i); s.classList.toggle("passed", k < i); });
@@ -74,12 +74,12 @@
 
   // "Your way": the format toggle and the phone switch together, every few seconds or on click.
   let clockFmt = false;
-  const fmtStep = steps[5], seg = document.getElementById("seg");
+  const fmtStep = steps[6], seg = document.getElementById("seg");
   function setClock(v) {
     clockFmt = v;
     fmtStep.classList.toggle("fmt-clock", v);
     seg.setAttribute("aria-pressed", String(v));
-    if (current === 5) show(5);
+    if (current === 6) show(6);
   }
   let auto = true;
   whileVisible(fmtStep, 2600, () => { if (auto) setClock(!clockFmt); });

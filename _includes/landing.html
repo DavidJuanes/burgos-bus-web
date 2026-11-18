@@ -16,7 +16,7 @@
         <div id="rows"></div>
       </div>
     </div>
-    <div class="phone hero-phone" aria-hidden="true"><div class="screen"><img class="on" src="{{ screens }}/nearby.webp" alt="" width="600" height="1300" fetchpriority="high"></div></div>
+    <div class="phone hero-phone" aria-hidden="true"><div class="screen"><img class="on" src="{{ screens }}/route.webp" alt="" width="600" height="1270" fetchpriority="high"></div></div>
   </div>
 </section>
 
@@ -38,10 +38,24 @@
       <div class="steps" id="steps">
         <span class="route-fill" aria-hidden="true"></span>
 
+        <article class="step" style="--c:#F4B335">
+          <span class="stop-dot" aria-hidden="true"></span>
+          <div class="card reveal">
+            <h3><span class="badge">1</span>{{ s.route.title }}</h3>
+            <p>{{ s.route.text }}</p>
+            <div class="demo">
+              <div class="arr"><span class="badge sm" style="background:#F4B335;color:#000">2</span><div class="who"><b>{{ s.route.first_title }}</b><small>{{ s.route.first_detail }}</small></div><div class="when"><b>{{ s.route.first_time }}</b><small>{{ s.route.first_arrival }}</small></div></div>
+              <div class="arr"><span class="badge sm" style="background:#B04DBF;color:#000">7</span><div class="who"><b>{{ s.route.second_title }}</b><small>{{ s.route.second_detail }}</small></div><div class="when"><b>{{ s.route.second_time }}</b><small>{{ s.route.second_arrival }}</small></div></div>
+            </div>
+            <div class="chips">{% for c in s.route.chips %}<span class="chip">{{ c }}</span>{% endfor %}</div>
+          </div>
+          <img class="mini" src="{{ screens }}/route.webp" alt="{{ s.route.alt }}" width="600" height="1270" loading="lazy">
+        </article>
+
         <article class="step" style="--c:#C98A4B">
           <span class="stop-dot" aria-hidden="true"></span>
           <div class="card reveal">
-            <h3><span class="badge">1</span>{{ s.nearby.title }}</h3>
+            <h3><span class="badge">2</span>{{ s.nearby.title }}</h3>
             <p>{{ s.nearby.text }}</p>
             <div class="demo">
               <div class="arr"><span class="badge sm" style="background:#92F247">3</span><div class="who"><b>San Juan Bautista</b><small>{{ s.nearby.first_away }}</small></div><div class="when"><b class="tick" data-m="2" data-in="{{ s.nearby.in }}" data-now="{{ s.nearby.now }}">{{ s.nearby.in | replace: "%m", "2" }}</b><small>{{ s.nearby.first_then }}</small></div></div>
@@ -55,7 +69,7 @@
         <article class="step" style="--c:#F2943C">
           <span class="stop-dot" aria-hidden="true"></span>
           <div class="card reveal">
-            <h3><span class="badge">2</span>{{ s.stop.title }}</h3>
+            <h3><span class="badge">3</span>{{ s.stop.title }}</h3>
             <p>{{ s.stop.text }}</p>
             <div class="demo stopdemo">
               <svg class="compass" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-opacity=".25" stroke-width="3"/><g class="needle"><path d="M32 8 40 32H24Z" fill="#048083"/><path d="M32 56 24 32h16Z" fill="currentColor" fill-opacity=".45"/></g><circle cx="32" cy="32" r="4" fill="currentColor"/></svg>
@@ -69,7 +83,7 @@
         <article class="step" style="--c:#97C014">
           <span class="stop-dot" aria-hidden="true"></span>
           <div class="card reveal">
-            <h3><span class="badge">3</span>{{ s.lines.title }}</h3>
+            <h3><span class="badge">4</span>{{ s.lines.title }}</h3>
             <p>{{ s.lines.text }}</p>
             <div class="demo">
               <div class="linehead"><span class="badge sm" style="background:#F90606">1</span><b>Avda. Arlanzón - Gamonal</b><span class="pill">{{ s.lines.active }}</span></div>
@@ -83,7 +97,7 @@
         <article class="step" style="--c:#2DAF5B">
           <span class="stop-dot" aria-hidden="true"></span>
           <div class="card reveal">
-            <h3><span class="badge">4</span>{{ s.map.title }}</h3>
+            <h3><span class="badge">5</span>{{ s.map.title }}</h3>
             <p>{{ s.map.text }}</p>
             <div class="demo legend" role="img" aria-label="{{ s.map.legend }}">
               {%- for l in site.data.lines %}<span style="background:{{ l.color }}{% unless l.dark %};color:#fff{% endunless %}">{{ l.id }}</span>{% endfor -%}
@@ -96,7 +110,7 @@
         <article class="step" style="--c:#D968CF">
           <span class="stop-dot" aria-hidden="true"></span>
           <div class="card reveal">
-            <h3><span class="badge">5</span>{{ s.fares.title }}</h3>
+            <h3><span class="badge">6</span>{{ s.fares.title }}</h3>
             <p>{{ s.fares.text }}</p>
             <div class="demo tickets">
               {%- for k in s.fares.tickets %}
@@ -111,7 +125,7 @@
         <article class="step" style="--c:#F0706F">
           <span class="stop-dot" aria-hidden="true"></span>
           <div class="card reveal">
-            <h3><span class="badge">6</span>{{ s.yours.title }}</h3>
+            <h3><span class="badge">7</span>{{ s.yours.title }}</h3>
             <p>{{ s.yours.text }}</p>
             <div class="demo">
               <button type="button" class="seg" id="seg" aria-label="{{ s.yours.toggle }}" aria-pressed="false"><span class="seg-a">{{ s.yours.relative }}</span><span class="seg-b">{{ s.yours.clock }}</span></button>
@@ -123,7 +137,8 @@
       </div>
       <div class="pin" aria-hidden="true">
         <div class="phone"><div class="screen" id="screen">
-          <img class="on" src="{{ screens }}/nearby.webp" alt="">
+          <img class="on" src="{{ screens }}/route.webp" alt="">
+          <img src="{{ screens }}/nearby.webp" alt="" loading="lazy">
           <img src="{{ screens }}/stop.webp" alt="" loading="lazy">
           <img src="{{ screens }}/line.webp" alt="" loading="lazy">
           <img src="{{ screens }}/map.webp" alt="" loading="lazy">
@@ -131,7 +146,7 @@
           <img class="dark" src="{{ screens }}/nearby-dark.webp" alt="" loading="lazy">
           <img class="dark fmtclock" src="{{ screens }}/nearby-dark-clock.webp" alt="" loading="lazy">
         </div></div>
-        <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
       </div>
     </div>
   </div>

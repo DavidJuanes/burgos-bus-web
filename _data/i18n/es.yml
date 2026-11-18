@@ -1,5 +1,5 @@
 locale: es_ES
-tagline: Tiempos de llegada del autobús urbano
+tagline: Rutas y tiempos de llegada del autobús urbano
 home: /
 skip: Saltar al contenido
 
@@ -18,8 +18,8 @@ play:
 
 hero:
   eyebrow: Autobuses urbanos de Burgos
-  title: ¿Cuánto le falta a tu bus?
-  lead: Tiempos de llegada en tiempo real de tus paradas favoritas y de las que tienes más cerca.
+  title: Dinos adónde vas y te decimos qué bus coger
+  lead: Calcula tu ruta en autobús por Burgos y déjate guiar paso a paso, con los tiempos en tiempo real de cada parada.
   note: Gratis · Sin registro · Android 8 o superior
   board_label: Panel de parada de ejemplo con las próximas llegadas a Puente de Santa María
   board_stop: PARADA 182 · PTE. STA. MARÍA
@@ -34,7 +34,20 @@ stats:
 story:
   kicker: Funciones
   title: Todo lo que necesitas en la parada
-  intro: Seis paradas por la app. Baja la página y el móvil te enseña cada pantalla.
+  intro: Siete paradas por la app. Baja la página y el móvil te enseña cada pantalla.
+  route:
+    title: Calcula tu ruta
+    text: Dinos adónde vas y te decimos qué bus coger, cuánto esperar y cuánto andar, con los tiempos en tiempo real de cada parada. Después, la guía de viaje te avisa paso a paso.
+    first_title: Directa · Hospital Universitario
+    first_detail: ~ 6 min andando · espera 3 min
+    first_time: 27 min
+    first_arrival: Llegada 19:09
+    second_title: Directa · Hospital Universitario
+    second_detail: ~ 8 min andando
+    second_time: ~ 28 min
+    second_arrival: Llegada ~ 19:10
+    chips: [Casa y Trabajo, Destinos recientes, Guía de viaje paso a paso]
+    alt: Pestaña Ruta con el trayecto al Hospital Universitario dibujado en el mapa y las opciones de autobús
   nearby:
     title: Cerca de ti
     text: Tus paradas favoritas y las más cercanas, con las próximas llegadas de cada línea.
