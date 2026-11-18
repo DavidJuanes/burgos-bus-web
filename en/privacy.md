@@ -5,7 +5,7 @@ ref: privacy
 permalink: /en/privacy/
 title: Privacy policy
 description: What data the Burgos Bus app handles, why, and how to exercise your rights.
-updated: 2026-11-09
+updated: 2026-11-18
 locale: en_GB
 ---
 
@@ -15,7 +15,7 @@ This policy explains what data the **Burgos Bus** app for Android (`dev.davidjua
 
 - There are no accounts or sign-ups: the app doesn't know who you are.
 - Your location, routes, favourites and settings stay on your phone. Routes are calculated on your phone.
-- The app sends crash reports to Google (Firebase Crashlytics) and shows Google AdMob ads, which use device identifiers. In the European Economic Area, the UK and Switzerland we ask for your consent before personalising ads.
+- The app sends crash reports to Google (Firebase Crashlytics), measures which screens, lines and stops are used with Google Analytics for Firebase (without your location) and shows Google AdMob ads, which use device identifiers. In the European Economic Area, the UK and Switzerland we ask for your consent before personalising ads and measuring usage.
 - We don't sell personal data.
 
 ## Controller
@@ -26,7 +26,7 @@ David González Juanes, the app's developer, based in Spain. Contact: [{{ site.c
 
 ### Location
 
-If you grant location permission (approximate or precise), the app uses it to sort stops by distance, centre the maps, point the compass towards the stop and, if you ask for a route or trip guidance, work out the journey from where you are. **Your location is processed only on your phone**: the app doesn't send it to any server or store it. The permission is optional, except for trip guidance (see below): without it, the app uses Burgos's Plaza Mayor as the starting point and routes are calculated from another origin you choose. You can revoke it at any time in Android settings.
+If you grant location permission (approximate or precise), the app uses it to sort stops by distance, centre the maps, point the compass towards the stop and, if you ask for a route or trip guidance, work out the journey from where you are. **Your location is processed only on your phone**: the app doesn't send it to any server or store it. The only thing that can give an approximate idea of where you are is which stop you open (see *Usage analytics*). The permission is optional, except for trip guidance (see below): without it, the app uses Burgos's Plaza Mayor as the starting point and routes are calculated from another origin you choose. You can revoke it at any time in Android settings.
 
 ### Favourites and settings
 
@@ -59,6 +59,16 @@ The maps use the Google Maps SDK for Android. When they're shown, Google receive
 
 When the app crashes, it sends a report to Firebase Crashlytics (Google) so we can find and fix the bug. The report includes the stack trace, the device model and Android version, the app version and a Firebase installation ID, which doesn't identify you personally. It doesn't include your location or your favourites. Legal basis: our legitimate interest in the app working properly. Crashlytics keeps reports for 90 days.
 
+### Usage analytics (Google Analytics for Firebase)
+
+The app uses Google Analytics for Firebase to know how much it is used, which screens, lines and stops are looked at the most and on which devices, and so that AdMob and Firebase can measure ads better. It records which **screen** you see and which **line or stop** you open (only when you open its detail, not when it shows up in a list), plus what the SDK collects by itself: opening the app, the ads shown, the device model, the Android and app versions, a Firebase installation ID, the advertising ID and the approximate country and city, which come from the IP address. It **doesn't include** your GPS location, your favourites, your routes or what you search for. Note that, since stops are in a specific place, opening a nearby stop gives an approximate idea of where you are. This data is linked to the app's AdMob account and Google processes it as our provider.
+
+- In the European Economic Area, the UK and Switzerland, analytics is off until you give your consent through Google's tool (UMP), the same one as for ads, and it stops collecting if you withdraw it from *More → Settings → Ad privacy options*. Outside those areas it is on when the app opens.
+- You can reset or delete the advertising ID in Android's settings (*Privacy → Ads*).
+- Google Analytics keeps the data for 14 months at most.
+
+Legal basis: your consent in the European Economic Area, the UK and Switzerland, and our legitimate interest in knowing how the app is used elsewhere.
+
 ### Advertising (Google AdMob)
 
 The app is free and funded by Google AdMob ads, which appear in some lists and at the bottom of some screens, never on the maps or full screen. To show and measure them and to prevent fraud, the Google Mobile Ads SDK collects and shares with Google:
@@ -84,7 +94,7 @@ This site is hosted on GitHub Pages and served through Cloudflare. Like any web 
 
 ## Who it's shared with
 
-Only with the providers above, for the purposes described: Google (Firebase Crashlytics, Google Maps and AdMob), Burgos City Council's mobility portal, which provides the arrival times and, to serve this site, GitHub and Cloudflare. Google may process data outside the European Economic Area under the EU-US Data Privacy Framework and the European Commission's standard contractual clauses.
+Only with the providers above, for the purposes described: Google (Firebase Crashlytics and Analytics, Google Maps and AdMob), Burgos City Council's mobility portal, which provides the arrival times and, to serve this site, GitHub and Cloudflare. Google may process data outside the European Economic Area under the EU-US Data Privacy Framework and the European Commission's standard contractual clauses.
 
 ## Your rights
 

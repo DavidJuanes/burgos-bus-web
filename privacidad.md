@@ -5,7 +5,7 @@ ref: privacy
 permalink: /privacidad/
 title: Política de privacidad
 description: Qué datos trata la app Burgos Bus, para qué y cómo ejercer tus derechos.
-updated: 2026-11-09
+updated: 2026-11-18
 locale: es_ES
 ---
 
@@ -15,7 +15,7 @@ Esta política explica qué datos trata la app **Burgos Bus** para Android (`dev
 
 - No hay cuentas ni registros: la app no sabe quién eres.
 - Tu ubicación, tus rutas, tus favoritas y tus ajustes se quedan en tu móvil. Las rutas se calculan en el móvil.
-- La app envía informes de fallos a Google (Firebase Crashlytics) y muestra anuncios de Google AdMob, que usan identificadores del dispositivo. En el Espacio Económico Europeo, Reino Unido y Suiza te pedimos el consentimiento antes de personalizar los anuncios.
+- La app envía informes de fallos a Google (Firebase Crashlytics), mide qué pantallas, líneas y paradas se usan con Google Analytics para Firebase (sin tu ubicación) y muestra anuncios de Google AdMob, que usan identificadores del dispositivo. En el Espacio Económico Europeo, Reino Unido y Suiza te pedimos el consentimiento antes de personalizar los anuncios y de medir el uso.
 - No vendemos datos personales.
 
 ## Responsable
@@ -26,7 +26,7 @@ David González Juanes, desarrollador de la app, con residencia en España. Cont
 
 ### Ubicación
 
-Si das permiso de ubicación (aproximada o precisa), la app la usa para ordenar las paradas por cercanía, centrar los mapas, orientar la brújula hacia la parada y, si pides una ruta o una guía de viaje, calcular el trayecto desde donde estás. **La ubicación se procesa solo en tu móvil**: la app no la envía a ningún servidor ni la guarda. El permiso es opcional, salvo para la guía de viaje (ver más abajo): sin él, la app usa la Plaza Mayor de Burgos como punto de partida y la ruta se calcula desde otro origen que elijas. Puedes retirarlo cuando quieras en los ajustes de Android.
+Si das permiso de ubicación (aproximada o precisa), la app la usa para ordenar las paradas por cercanía, centrar los mapas, orientar la brújula hacia la parada y, si pides una ruta o una guía de viaje, calcular el trayecto desde donde estás. **La ubicación se procesa solo en tu móvil**: la app no la envía a ningún servidor ni la guarda. Lo único que puede delatar de forma aproximada dónde estás es qué parada abres (ver *Analítica de uso*). El permiso es opcional, salvo para la guía de viaje (ver más abajo): sin él, la app usa la Plaza Mayor de Burgos como punto de partida y la ruta se calcula desde otro origen que elijas. Puedes retirarlo cuando quieras en los ajustes de Android.
 
 ### Favoritas y ajustes
 
@@ -59,6 +59,16 @@ Los mapas usan el SDK de Google Maps para Android. Al mostrarlos, Google recibe 
 
 Cuando la app falla, envía un informe a Firebase Crashlytics (Google) para que podamos encontrar y corregir el error. El informe incluye la traza del fallo, el modelo y la versión de Android del dispositivo, la versión de la app y un identificador de instalación de Firebase, que no te identifica personalmente. No incluye tu ubicación ni tus favoritas. Base legal: nuestro interés legítimo en que la app funcione bien. Crashlytics conserva los informes 90 días.
 
+### Analítica de uso (Google Analytics para Firebase)
+
+La app usa Google Analytics para Firebase para saber cuánto se usa, qué pantallas, líneas y paradas se consultan más y en qué dispositivos, y para que AdMob y Firebase puedan medir mejor los anuncios. Registra qué **pantalla** ves y qué **línea o parada** abres (solo cuando abres su detalle, no cuando aparecen en una lista), además de lo que el SDK recoge solo: abrir la app, los anuncios mostrados, el modelo del dispositivo, la versión de Android y de la app, un identificador de instalación de Firebase, el identificador de publicidad y el país y la ciudad aproximados, que salen de la dirección IP. **No incluye** tu ubicación del GPS, tus favoritas, tus rutas ni lo que buscas. Ten en cuenta que, como las paradas están en un sitio concreto, que abras una parada cercana indica de forma aproximada dónde estás. Estos datos se asocian a la cuenta de AdMob de la app y los trata Google como proveedor nuestro.
+
+- En el Espacio Económico Europeo, Reino Unido y Suiza, la analítica está desactivada hasta que das tu consentimiento con la herramienta de Google (UMP), la misma de los anuncios, y deja de recoger si lo retiras desde *Más → Ajustes → Opciones de privacidad de anuncios*. Fuera de esas zonas se activa al abrir la app.
+- Puedes restablecer o eliminar el identificador de publicidad en los ajustes de Android (*Privacidad → Anuncios*).
+- Google Analytics conserva los datos 14 meses como máximo.
+
+Base legal: tu consentimiento en el Espacio Económico Europeo, Reino Unido y Suiza, y nuestro interés legítimo en conocer el uso de la app en el resto.
+
 ### Publicidad (Google AdMob)
 
 La app es gratuita y se financia con anuncios de Google AdMob, que aparecen en algunas listas y en la parte de abajo de algunas pantallas, nunca en los mapas ni a pantalla completa. Para mostrarlos, medirlos y prevenir el fraude, el SDK de anuncios de Google recoge y comparte con Google:
@@ -84,7 +94,7 @@ Este sitio está alojado en GitHub Pages y se sirve a través de Cloudflare. Com
 
 ## Con quién se comparten
 
-Solo con los proveedores mencionados, para lo que se explica en cada caso: Google (Firebase Crashlytics, Google Maps y AdMob), el portal de movilidad del Ayuntamiento de Burgos, que da los tiempos de llegada y, para servir este sitio, GitHub y Cloudflare. Google puede tratar los datos fuera del Espacio Económico Europeo con las garantías del Marco de Privacidad de Datos UE-EE. UU. y las cláusulas contractuales tipo de la Comisión Europea.
+Solo con los proveedores mencionados, para lo que se explica en cada caso: Google (Firebase Crashlytics y Analytics, Google Maps y AdMob), el portal de movilidad del Ayuntamiento de Burgos, que da los tiempos de llegada y, para servir este sitio, GitHub y Cloudflare. Google puede tratar los datos fuera del Espacio Económico Europeo con las garantías del Marco de Privacidad de Datos UE-EE. UU. y las cláusulas contractuales tipo de la Comisión Europea.
 
 ## Tus derechos
 
